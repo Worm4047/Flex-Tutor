@@ -33,7 +33,36 @@
 				  	<ul class="list-group">
 					  <li class="list-group-item">
 					  	<h2>Display</h2>
-					  	<div class="parent-display">
+					  	<div class="parent-display-options">
+							<label class="radio-inline">
+								<input type="radio" value="flex" class="prop-selected" category="display">Flex
+							</label>
+					  	</div>
+					  	<div class="parent-display parent-test-div-container">
+					  		<div class="parent-test-div red"></div>
+					  		<div class="parent-test-div blue"></div>
+					  		<div class="parent-test-div green"></div>
+					  		<div class="parent-test-div orange"></div>
+					  		<div class="parent-test-div purple"></div>
+					  	</div>
+					  </li>
+					  <li class="list-group-item ">
+					  	<h2>Flex Direction</h2>
+					  	<div class="parent-direction-options">
+							<label class="radio-inline">
+								<input type="radio" value="row" class="prop-selected" category="flex-direction" name="flex-direction" checked="checked">Row
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="row-reverse" class="prop-selected" category="flex-direction" name="flex-direction">Row-Reverse
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="column" class="prop-selected" category="flex-direction" name="flex-direction">Column
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="column-reverse" class="prop-selected" category="flex-direction" name="flex-direction">Column-Reverse
+							</label>
+					  	</div>
+					  	<div class="parent-direction parent-test-div-container">
 					  		<div class="parent-test-div red"></div>
 					  		<div class="parent-test-div blue"></div>
 					  		<div class="parent-test-div green"></div>
@@ -42,20 +71,118 @@
 					  	</div>
 					  </li>
 					  <li class="list-group-item">
-					  	<h2>Flex Direction</h2>
-
-					  </li>
-					  <li class="list-group-item">
 					  	<h2>Flex Wrap</h2>
+					  	<div class="parent-wrap-options">
+							<label class="radio-inline">
+								<input type="radio" value="nowrap" class="prop-selected" category="flex-wrap" name="flex-wrap" checked="checked">No Wrap
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="wrap" class="prop-selected" category="flex-wrap" name="flex-wrap">Wrap
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="wrap-reverse" class="prop-selected" category="flex-wrap" name="flex-wrap">wrap-reverse
+							</label>
+					  	</div>
+					  	<div class="parent-wrap parent-test-div-container">
+					  		<div class="parent-test-div red"></div>
+					  		<div class="parent-test-div blue"></div>
+					  		<div class="parent-test-div green"></div>
+					  		<div class="parent-test-div orange"></div>
+					  		<div class="parent-test-div purple"></div>
+					  	</div>
 					  </li>
 					  <li class="list-group-item">
 					  	<h2>Justify Content</h2>
+					  	<div class="parent-justify-options">
+							<label class="radio-inline">
+								<input type="radio" value="flex-start" class="prop-selected" category="justify-content" name="justify-content" checked="checked">Flex-Start
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="flex-end" class="prop-selected" category="justify-content" name="justify-content">Flex-End
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="center" class="prop-selected" category="justify-content" name="justify-content">center
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="space-between" class="prop-selected" category="justify-content" name="justify-content">space-between
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="space-around" class="prop-selected" category="justify-content" name="justify-content">space-around
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="space-evenly" class="prop-selected" category="justify-content" name="justify-content">space-evenly
+							</label>														
+					  	</div>
+					  	<div class="parent-justify parent-test-div-container">
+					  		<div class="parent-test-div red"></div>
+					  		<div class="parent-test-div blue"></div>
+					  		<div class="parent-test-div green"></div>
+					  		<div class="parent-test-div orange"></div>
+					  		<div class="parent-test-div purple"></div>
+					  	</div>
 					  </li>
 					  <li class="list-group-item">
 					  	<h2>Align Items</h2>
+					  	<div class="parent-alignitems-options">
+							<label class="radio-inline">
+								<input type="radio" value="flex-start" class="prop-selected" category="align-items" name="align-items" >Flex-Start
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="flex-end" class="prop-selected" category="align-items" name="align-items" >Flex-End
+							</label>													
+							<label class="radio-inline">
+								<input type="radio" value="center" class="prop-selected" category="align-items" name="align-items" >center
+							</label>													
+							<label class="radio-inline">
+								<input type="radio" value="baseline" class="prop-selected" category="align-items" name="align-items" >Baseline
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="stretch" class="prop-selected" category="align-items" name="align-items" checked="checked">Stretch
+							</label>																						
+					  	</div>
+					  	<div class="parent-alignitems parent-test-div-container">
+					  		<div class="parent-test-div red"></div>
+					  		<div class="parent-test-div blue"></div>
+					  		<div class="parent-test-div green"></div>
+					  		<div class="parent-test-div orange"></div>
+					  		<div class="parent-test-div purple"></div>
+					  	</div>					  	
 					  </li>
 					  <li class="list-group-item">
 					  	<h2>Align Content</h2>
+					  	<div class="parent-aligncontent-options">
+							<label class="radio-inline">
+								<input type="radio" value="flex-start" class="prop-selected" category="align-content" name="align-content" >Flex-Start
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="flex-end" class="prop-selected" category="align-content" name="align-content" >Flex-End
+							</label>													
+							<label class="radio-inline">
+								<input type="radio" value="center" class="prop-selected" category="align-content" name="align-content" >center
+							</label>													
+							<label class="radio-inline">
+								<input type="radio" value="baseline" class="prop-selected" category="align-content" name="align-content" >Baseline
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="stretch" class="prop-selected" category="align-content" name="align-content" checked="checked">Stretch
+							</label>							
+							<label class="radio-inline">
+								<input type="radio" value="space-between" class="prop-selected" category="align-content" name="align-content" checked="checked">space-between
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="space-around" class="prop-selected" category="align-content" name="align-content" >space-around
+							</label>	
+					  	</div>
+					  	<div class="parent-aligncontent parent-test-div-container">
+					  		<div class="parent-test-div red"></div>
+					  		<div class="parent-test-div blue"></div>
+					  		<div class="parent-test-div green"></div>
+					  		<div class="parent-test-div orange"></div>
+					  		
+					  		<div class="parent-test-div purple"></div>
+					  		<div class="parent-test-div red"></div>
+					  		<div class="parent-test-div blue"></div>
+					  	</div>						  	
 					  </li>
 					</ul>
 				  </div>

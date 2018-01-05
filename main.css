@@ -3,9 +3,12 @@ body{
 
 }
 
-body, button, input, textarea {
+body, 
+button, 
+input, 
+textarea {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
 }
 
@@ -17,8 +20,8 @@ ul{
 
 
 .main-container{
-	margin-top: 7vh;
-	padding: 20px;
+	margin-top: 1vh;
+	padding: 50px;
 }
 .card{
 	width: 100%;
@@ -31,8 +34,7 @@ ul{
 	font-size: 1.5em;
 	font-weight: 600px;
 }
-.parent-display{
-	display: flex;
+.parent-test-div-container{
 	max-width:450px;
 }
 .parent-test-div{
@@ -53,4 +55,27 @@ ul{
 }
 .orange{
 	background-color: orange;
+}
+
+.parent-direction,
+.parent-wrap,
+.parent-justify,
+.parent-alignitems,
+.parent-aligncontent{
+	display:flex;
+}
+.parent-justify{
+	max-width: 100%
+}
+.parent-alignitems, 
+.parent-aligncontent{
+	height: 300px;
+}
+.parent-alignitems .parent-test-div, 
+.parent-aligncontent .parent-test-div{
+	min-height: 100px;
+	height: auto;
+}
+.parent-aligncontent{
+	flex-wrap: wrap;
 }
