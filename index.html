@@ -22,253 +22,398 @@
 	</div>
 	<div class="main-container">
 
-		<div class="row">
-			<div class="col-lg-6  col-md-6  col-sm-12 col-xs-12 parent">
+		<div class="row" id="parent">
+			<div class="col-lg-12  col-md-12  col-sm-12 col-xs-12 parent">
 				<div class="card" >
-				  <div class="card-block">
-				    <h3 class="card-title">Properties for the Parent</h3>
+				  <div class="card-block" >
+				    <h3 class="card-title">Properties for the Parent ( Applied over Flex-Container )</h3>
+				    <h4  class="pull-right"><a href="#child"> View Properties for the Children ( Flex-Items )</a></h4>
 				  </div>
 				  
 				  <div class="parent-examples">
 				  	<ul class="list-group">
 					  
-					  <li class="list-group-item ">
+					  <li class="list-group-item listy ">
 					  	<h2 class="mbl">Flex Direction</h2>
-					  	<div class="parent-direction-options">
-							<label class="radio-inline">
-								<input type="radio" value="row" class="prop-selected mbm" category="flex-direction" name="flex-direction" checked="checked">Row
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="row-reverse" class="prop-selected" category="flex-direction" name="flex-direction">Row-Reverse
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="column" class="prop-selected" category="flex-direction" name="flex-direction">Column
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="column-reverse" class="prop-selected" category="flex-direction" name="flex-direction">Column-Reverse
-							</label>
+					  	<div class="row">
+					  		<div class="col-lg-7 col-md-7">
+							  	<div class="parent-direction-options">
+									<label class="radio-inline">
+										<input type="radio" value="row" class="prop-selected mbm" category="flex-direction" name="flex-direction" checked="checked">Row
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="row-reverse" class="prop-selected" category="flex-direction" name="flex-direction">Row-Reverse
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="column" class="prop-selected" category="flex-direction" name="flex-direction">Column
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="column-reverse" class="prop-selected" category="flex-direction" name="flex-direction">Column-Reverse
+									</label>
+							  	</div>
+							  	<div class="parent-direction parent-test-div-container">
+							  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
+							  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
+							  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
+							  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
+							  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
+							  	</div>
+							  	<div class="description mbl">
+					  				This defines the direction flex items are placed in the flex container. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+					  			</div>
+					  			<div class="types">
+					  				<p><code>row (default)</code>: left to right in ltr; right to left in rtl</p>
+									<p><code>row-reverse</code>: right to left in ltr; left to right in rtl</p>
+									<p><code>column</code>: same as row but top to bottom</p>
+									<p><code>column-reverse</code>: same as row-reverse but bottom to top</p>
+					  			</div>
+					  		</div>
+					  		<div class="col-lg-5 col-md-5 ">
+					  			<img class="img-responsive mbl pull-right" src="https://css-tricks.com/wp-content/uploads/2013/04/flex-direction2.svg">
+					  			
+					  		</div>
 					  	</div>
-					  	<div class="parent-direction parent-test-div-container">
-					  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
-					  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
-					  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
-					  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
-					  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
-					  	</div>
-					  </li>
-					  <li class="list-group-item">
+
+					  </p>
+					  <li class="list-group-item listy">
 					  	<h2 class="mbl">Flex Wrap</h2>
-					  	<div class="parent-wrap-options">
-							<label class="radio-inline">
-								<input type="radio" value="nowrap" class="prop-selected" category="flex-wrap" name="flex-wrap" checked="checked">No Wrap
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="wrap" class="prop-selected" category="flex-wrap" name="flex-wrap">Wrap
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="wrap-reverse" class="prop-selected" category="flex-wrap" name="flex-wrap">wrap-reverse
-							</label>
+					  	<div class="row">
+					  		<div class="col-lg-7 col-md-7">
+								<div class="parent-wrap-options">
+									<label class="radio-inline">
+										<input type="radio" value="nowrap" class="prop-selected" category="flex-wrap" name="flex-wrap" checked="checked">No Wrap
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="wrap" class="prop-selected" category="flex-wrap" name="flex-wrap">Wrap
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="wrap-reverse" class="prop-selected" category="flex-wrap" name="flex-wrap">wrap-reverse
+									</label>
+							  	</div>
+							  	<div class="parent-wrap parent-test-div-container">
+							  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
+							  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
+							  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
+							  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
+							  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
+							  	</div>	
+							  	<div class="description mbl">
+					  				By default, flex items will all try to fit onto one line. It can be changed to allow the items to wrap as needed with this property.
+					  			</div>
+					  			<div class="types">
+					  				<p><code>No wrap (Default)</code>: all flex items will be on one line</p>
+									<p><code>Wrap</code>: flex items will wrap onto multiple lines, from top to bottom.</p>
+									<p><code>Reverse</code>: flex items will wrap onto multiple lines from bottom to top.</p>
+					  			</div>				  			
+					  		</div>
+					  		<div class="col-lg-5 col-md-5">
+					  			<img class="img-responsive mbl  pull-right" src="https://css-tricks.com/wp-content/uploads/2014/05/flex-wrap.svg">
+					  			
+					  		</div>
+
 					  	</div>
-					  	<div class="parent-wrap parent-test-div-container">
-					  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
-					  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
-					  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
-					  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
-					  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
-					  	</div>
-					  </li>
-					  <li class="list-group-item">
+					  </p>
+					  <li class="list-group-item listy">
 					  	<h2 class="mbl">Justify Content</h2>
-					  	<div class="parent-justify-options">
-							<label class="radio-inline">
-								<input type="radio" value="flex-start" class="prop-selected" category="justify-content" name="justify-content" checked="checked">Flex-Start
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="flex-end" class="prop-selected" category="justify-content" name="justify-content">Flex-End
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="center" class="prop-selected" category="justify-content" name="justify-content">center
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="space-between" class="prop-selected" category="justify-content" name="justify-content">space-between
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="space-around" class="prop-selected" category="justify-content" name="justify-content">space-around
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="space-evenly" class="prop-selected" category="justify-content" name="justify-content">space-evenly
-							</label>														
-					  	</div>
-					  	<div class="parent-justify parent-test-div-container">
-					  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
-					  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
-					  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
-					  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
-					  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
-					  	</div>
-					  </li>
-					  <li class="list-group-item">
+					  	<div class="row">
+						  	<div class="col-lg-7 col-md-7">
+								<div class="parent-justify-options">
+									<label class="radio-inline">
+										<input type="radio" value="flex-start" class="prop-selected" category="justify-content" name="justify-content" checked="checked">Flex-Start
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="flex-end" class="prop-selected" category="justify-content" name="justify-content">Flex-End
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="center" class="prop-selected" category="justify-content" name="justify-content">center
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="space-between" class="prop-selected" category="justify-content" name="justify-content">space-between
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="space-around" class="prop-selected" category="justify-content" name="justify-content">space-around
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="space-evenly" class="prop-selected" category="justify-content" name="justify-content">space-evenly
+									</label>														
+							  	</div>
+							  	<div class="parent-justify parent-test-div-container mbl">
+							  		<div class="parent-test-div red mbl"><span class="test-div-text">1</span></div>
+							  		<div class="parent-test-div blue mbl"><span class="test-div-text">2</span></div>
+							  		<div class="parent-test-div green mbl"><span class="test-div-text">3</span></div>
+							  		<div class="parent-test-div orange mbl"><span class="test-div-text">4</span></div>
+							  		<div class="parent-test-div purple mbl"><span class="test-div-text">5</span></div>
+							  	</div>
+								<div class="description mbl">
+					  				Deals with alignment along the X-axis. It distributes the free space untill the elements are inflexible or have reached their maximum allowed size. It also exerts some control over the alignment of items when they overflow the line.
+					  			</div>
+					  			<div class="types">
+					  				<p><code>flex-start (Default)</code>: items are packed toward the start of the line(row or column)</p>
+									<p><code>flex-end</code>: items are packed toward to end of the line(row or column)</p>
+									<p><code>center</code>: flex items will be placed in the center of the line(row/column)</p>
+									<p><code>space-between</code>: items are evenly distributed in the line; first item is on the start line, last item on the end line</p>
+									<p><code>space-around</code>: items are evenly distributed in the line with equal space around them. </p>
+									<p><code>space-evenly</code>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</p>
+					  			</div>					  		
+						  	</div>
+					  		<div class="col-lg-5 col-md-5 pull-right">
+					  			<img class="img-responsive mbl pull-right" src="https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg">	
+					  		</div>						  	
+						</div>
+					  </p>
+					  <li class="list-group-item listy">
 					  	<h2 class="mbl">Align Items</h2>
-					  	<div class="parent-alignitems-options">
-							<label class="radio-inline">
-								<input type="radio" value="flex-start" class="prop-selected" category="align-items" name="align-items" >Flex-Start
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="flex-end" class="prop-selected" category="align-items" name="align-items" >Flex-End
-							</label>													
-							<label class="radio-inline">
-								<input type="radio" value="center" class="prop-selected" category="align-items" name="align-items" >center
-							</label>													
-							<label class="radio-inline">
-								<input type="radio" value="baseline" class="prop-selected" category="align-items" name="align-items" >Baseline
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="stretch" class="prop-selected" category="align-items" name="align-items" checked="checked">Stretch
-							</label>																						
+					  	<div class="row">
+					  		<div class="col-lg-7 col-md-7">
+					  			<div class="parent-alignitems-options">
+									<label class="radio-inline">
+										<input type="radio" value="flex-start" class="prop-selected" category="align-items" name="align-items" >Flex-Start
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="flex-end" class="prop-selected" category="align-items" name="align-items" >Flex-End
+									</label>													
+									<label class="radio-inline">
+										<input type="radio" value="center" class="prop-selected" category="align-items" name="align-items" >center
+									</label>													
+									<label class="radio-inline">
+										<input type="radio" value="baseline" class="prop-selected" category="align-items" name="align-items" >Baseline
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="stretch" class="prop-selected" category="align-items" name="align-items" checked="checked">Stretch
+									</label>											
+							  	</div>
+							  	<div class="parent-alignitems parent-test-div-container">
+							  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
+							  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
+							  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
+							  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
+							  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
+							  	</div>
+							  	<div class="description mbl">
+					  				This defines the default behaviour for how flex items are laid out along the vertical(in row direction) and horizontal(in column direction) . Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
+					  			</div>
+					  			<div class="types">
+					  				<p><code>flex-start</code>: cross-start margin edge of the items is placed on the cross-start line</p>
+									<p><code>flex-end</code>: cross-end margin edge of the items is placed on the cross-end line</p>
+									<p><code>center</code>: items are centered in the cross-axis</p>
+									<p><code>baseline</code>: items are aligned such as their baselines align</p>
+									<p><code>stretch</code> (default): stretch to fill the container (still respect min-width/max-width)</p>
+					  			</div>
+					  		</div>
+					  		<div class="col-lg-5 col-md-5 pull-right">
+					  			<img class="img-responsive mbl pull-right" src="https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg">
+					  				
+					  		</div>	
 					  	</div>
-					  	<div class="parent-alignitems parent-test-div-container">
-					  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
-					  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
-					  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
-					  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
-					  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
-					  	</div>					  	
-					  </li>
-					  <li class="list-group-item">
+					  						  	
+					  </p>
+					  <li class="list-group-item listy">
 					  	<h2 class="mbl">Align Content</h2>
-					  	<div class="parent-aligncontent-options mbl">
-							<label class="radio-inline">
-								<input type="radio" value="flex-start" class="prop-selected" category="align-content" name="align-content" >Flex-Start
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="flex-end" class="prop-selected" category="align-content" name="align-content" >Flex-End
-							</label>													
-							<label class="radio-inline">
-								<input type="radio" value="center" class="prop-selected" category="align-content" name="align-content" >center
-							</label>													
-							<label class="radio-inline">
-								<input type="radio" value="baseline" class="prop-selected" category="align-content" name="align-content" >Baseline
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="stretch" class="prop-selected" category="align-content" name="align-content" checked="checked">Stretch
-							</label>							
-							<label class="radio-inline">
-								<input type="radio" value="space-between" class="prop-selected" category="align-content" name="align-content" checked="checked">space-between
-							</label>
-							<label class="radio-inline">
-								<input type="radio" value="space-around" class="prop-selected" category="align-content" name="align-content" >space-around
-							</label>	
+					  	<div class="row">
+					  		<div class="col-lg-7 col-md-7 pull-right">
+							  	<div class="parent-aligncontent-options mbl">
+									<label class="radio-inline">
+										<input type="radio" value="flex-start" class="prop-selected" category="align-content" name="align-content" >Flex-Start
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="flex-end" class="prop-selected" category="align-content" name="align-content" >Flex-End
+									</label>													
+									<label class="radio-inline">
+										<input type="radio" value="center" class="prop-selected" category="align-content" name="align-content" >center
+									</label>													
+									<label class="radio-inline">
+										<input type="radio" value="baseline" class="prop-selected" category="align-content" name="align-content" >Baseline
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="stretch" class="prop-selected" category="align-content" name="align-content" checked="checked">Stretch
+									</label>							
+									<label class="radio-inline">
+										<input type="radio" value="space-between" class="prop-selected" category="align-content" name="align-content" checked="checked">space-between
+									</label>
+									<label class="radio-inline">
+										<input type="radio" value="space-around" class="prop-selected" category="align-content" name="align-content" >space-around
+									</label>	
+							  	</div>
+							  	<div class="parent-aligncontent parent-test-div-container">
+							  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
+							  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
+							  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
+							  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
+							  		
+							  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
+							  		<div class="parent-test-div red"><span class="test-div-text">6</span></div>
+							  		<div class="parent-test-div blue"><span class="test-div-text">7</span></div>
+							  	</div>
+							  	<div class="description mbl">
+					  				This aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+									<b>Note</b>: this property has no effect when there is only one line of flex items.
+					  			</div>
+					  			<div class="types">>
+									<p><code>flex-start</code>: lines packed to the start of the container</p>
+									<p><code>flex-end</code>: lines packed to the end of the container</p>
+									<p><code>center</code>: lines packed to the center of the container</p>
+									<p><code>space-between</code>: lines evenly distributed; the first line is at the start of the container while the last one is at the end</p>
+									<p><code>space-around</code>: lines evenly distributed with equal space around each line</p>
+									<p><code>stretch</code> (default): lines stretch to take up the remaining space</p>
+					  			</div>						  						  			
+					  		</div>
+					  		<div class="col-lg-5 col-md-5 pull-right">
+					  			<img class="img-responsive mbl pull-right" src="https://css-tricks.com/wp-content/uploads/2013/04/align-content.svg">
+					  				
+					  		</div>
 					  	</div>
-					  	<div class="parent-aligncontent parent-test-div-container">
-					  		<div class="parent-test-div red"><span class="test-div-text">1</span></div>
-					  		<div class="parent-test-div blue"><span class="test-div-text">2</span></div>
-					  		<div class="parent-test-div green"><span class="test-div-text">3</span></div>
-					  		<div class="parent-test-div orange"><span class="test-div-text">4</span></div>
-					  		
-					  		<div class="parent-test-div purple"><span class="test-div-text">5</span></div>
-					  		<div class="parent-test-div red"><span class="test-div-text">6</span></div>
-					  		<div class="parent-test-div blue"><span class="test-div-text">7</span></div>
-					  	</div>						  	
-					  </li>
+
+					  </p>
 					</ul>
 				  </div>
 				</div>
 			</div>
-
-			<div class="col-lg-6 col-md-6  col-sm-12 col-xs-12 items">
+		</div>
+		<div class="row" id="child">
+			<div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 items">
 				<div class="card" >
 				  <div class="card-block">
-				    <h3 class="card-title">Properties for the Children</h3>
+				    <h3 class="card-title">Properties for the Children ( Applied on FLex-Items )</h3>
+				    <h3  class="pull-right"><a href="#parent"> View Properties for the Parent ( Flex-Container )</a></h3>
+
 				  </div>
 				  <div class="divider"></div>
 				  <div class="child-examples">
 				  	<ul class="list-group">
-				  		<li class="list-group-item">
+				  		<li class="list-group-item listy">
 						  	<h2 class="mbl">Order</h2>
-						  	<div class="child-order-options xyz mbl">
-								<label class="radio-inline">
-									<input type="number" class="prop-entered" category="order" item="1" placeholder="Item 1">
-									<input type="number" class="prop-entered" category="order" item="2" placeholder="Item 2">
-									<input type="number" class="prop-entered" category="order" item="3" placeholder="Item 3">
-									<input type="number"" class="prop-entered" category="order" item="4" placeholder="Item 4">
-									<input type="number" class="prop-entered" category="order" item="5" placeholder="Item 5">
-								</label>
+						  	<div class="row">
+						  		<div class="col-lg-7 col-md-7">
+									<div class="child-order-options xyz mbl">
+										<label class="radio-inline">
+											<input type="number" class="prop-entered" category="order" item="1" placeholder="Item 1">
+											<input type="number" class="prop-entered" category="order" item="2" placeholder="Item 2">
+											<input type="number" class="prop-entered" category="order" item="3" placeholder="Item 3">
+											<input type="number"" class="prop-entered" category="order" item="4" placeholder="Item 4">
+											<input type="number" class="prop-entered" category="order" item="5" placeholder="Item 5">
+										</label>
+								  	</div>
+								  	<div class="child-order child-test-div-container xyz mbl">
+								  		<div class="child-test-div red"><span class="test-div-text">1</span></div>
+								  		<div class="child-test-div blue"><span class="test-div-text">2</span></div>
+								  		<div class="child-test-div green"><span class="test-div-text">3</span></div>
+								  		<div class="child-test-div orange"><span class="test-div-text">4</span></div>
+								  		<div class="child-test-div purple"><span class="test-div-text">5</span></div>
+								  	</div>
+								  	<div class="description mbl">
+					  				By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
+						  			</div>						  			
+						  		</div>
+						  		<div class="col-lg-5 col-md-5 ">
+						  			<img class="img-responsive mbl pull-right" src="https://css-tricks.com/wp-content/uploads/2013/04/order-2.svg">
+						  			
+						  		</div>						  		
 						  	</div>
-						  	<div class="child-order child-test-div-container xyz mbl">
-						  		<div class="child-test-div red"><span class="test-div-text">1</span></div>
-						  		<div class="child-test-div blue"><span class="test-div-text">2</span></div>
-						  		<div class="child-test-div green"><span class="test-div-text">3</span></div>
-						  		<div class="child-test-div orange"><span class="test-div-text">4</span></div>
-						  		<div class="child-test-div purple"><span class="test-div-text">5</span></div>
-						  	</div>
+						  	
 						</li>
-				  		<li class="list-group-item">
+				  		<li class="list-group-item listy">
 						  	<h2 class="mbl">Flex-Grow</h2>
-						  	<div class="child-flexgrow-options xyz mbl">
-								<label class="radio-inline">
-									<input type="number" class="prop-entered" category="flex-grow" item="1" placeholder="Item 1">
-									<input type="number" class="prop-entered" category="flex-grow" item="2" placeholder="Item 2">
-									<input type="number" class="prop-entered" category="flex-grow" item="3" placeholder="Item 3">
-									<input type="number"" class="prop-entered" category="flex-grow" item="4" placeholder="Item 4">
-									<input type="number" class="prop-entered" category="flex-grow" item="5" placeholder="Item 5">
-								</label>
-						  	</div>
-						  	<div class="child-flexgrow child-test-div-container xyz mbl">
-						  		<div class="child-test-div red"><span class="test-div-text">1</span></div>
-						  		<div class="child-test-div blue"><span class="test-div-text">2</span></div>
-						  		<div class="child-test-div green"><span class="test-div-text">3</span></div>
-						  		<div class="child-test-div orange"><span class="test-div-text">4</span></div>
-						  		<div class="child-test-div purple"><span class="test-div-text">5</span></div>
-						  	</div>
+						  	<div class="row">
+						  		<div class="col-lg-7 col-md-7">
+								  	<div class="child-flexgrow-options xyz mbl">
+										<label class="radio-inline">
+											<input type="number" class="prop-entered" category="flex-grow" item="1" placeholder="Item 1">
+											<input type="number" class="prop-entered" category="flex-grow" item="2" placeholder="Item 2">
+											<input type="number" class="prop-entered" category="flex-grow" item="3" placeholder="Item 3">
+											<input type="number"" class="prop-entered" category="flex-grow" item="4" placeholder="Item 4">
+											<input type="number" class="prop-entered" category="flex-grow" item="5" placeholder="Item 5">
+										</label>
+								  	</div>
+								  	<div class="child-flexgrow child-test-div-container xyz mbl">
+								  		<div class="child-test-div red"><span class="test-div-text">1</span></div>
+								  		<div class="child-test-div blue"><span class="test-div-text">2</span></div>
+								  		<div class="child-test-div green"><span class="test-div-text">3</span></div>
+								  		<div class="child-test-div orange"><span class="test-div-text">4</span></div>
+								  		<div class="child-test-div purple"><span class="test-div-text">5</span></div>
+								  	</div>
+								  	<div class="description mbl">
+					  				<p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.<p>
+
+									<p>If all items have <code>flex-grow</code> set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).</p>
+									<p><b>Negative numbers are invalid.</b></p>
+						  			</div>								  	
+								</div>
+						  		<div class="col-lg-5 col-md-5 ">
+						  			<img class="img-responsive mbl pull-right" src="https://css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg">	
+						  		</div>	
+						  	</div>								
 						</li>
-				  		<li class="list-group-item">
+				  		<li class="list-group-item listy">
 						  	<h2 class="mbl">Flex-Shrink</h2>
-						  	<div class="child-flexshrink-options xyz mbl">
-								<label class="radio-inline">
-									<input type="number" class="prop-entered" category="flex-shrink" item="1" placeholder="Item 1">
-									<input type="number" class="prop-entered" category="flex-shrink" item="2" placeholder="Item 2">
-									<input type="number" class="prop-entered" category="flex-shrink" item="3" placeholder="Item 3">
-									<input type="number"" class="prop-entered" category="flex-shrink" item="4" placeholder="Item 4">
-									<input type="number" class="prop-entered" category="flex-shrink" item="5" placeholder="Item 5">
-								</label>
-						  	</div>
-						  	<div class="child-flexshrink child-test-div-container xyz mbl">
-						  		<div class="child-test-div red"><span class="test-div-text">1</span></div>
-						  		<div class="child-test-div blue"><span class="test-div-text">2</span></div>
-						  		<div class="child-test-div green"><span class="test-div-text">3</span></div>
-						  		<div class="child-test-div orange"><span class="test-div-text">4</span></div>
-						  		<div class="child-test-div purple"><span class="test-div-text">5</span></div>
-						  	</div>
+						  	<div class="row">
+						  		<div class="col-lg-7 col-md-7">
+								  	<div class="child-flexshrink-options xyz mbl">
+										<label class="radio-inline">
+											<input type="number" class="prop-entered" category="flex-shrink" item="1" placeholder="Item 1">
+											<input type="number" class="prop-entered" category="flex-shrink" item="2" placeholder="Item 2">
+											<input type="number" class="prop-entered" category="flex-shrink" item="3" placeholder="Item 3">
+											<input type="number"" class="prop-entered" category="flex-shrink" item="4" placeholder="Item 4">
+											<input type="number" class="prop-entered" category="flex-shrink" item="5" placeholder="Item 5">
+										</label>
+								  	</div>
+								  	<div class="child-flexshrink child-test-div-container xyz mbl">
+								  		<div class="child-test-div red"><span class="test-div-text">1</span></div>
+								  		<div class="child-test-div blue"><span class="test-div-text">2</span></div>
+								  		<div class="child-test-div green"><span class="test-div-text">3</span></div>
+								  		<div class="child-test-div orange"><span class="test-div-text">4</span></div>
+								  		<div class="child-test-div purple"><span class="test-div-text">5</span></div>
+								  	</div>
+								  	<div class="description mbl">
+										This defines the ability for a flex item to shrink if necessary.
+										<p><b>Negative numbers are invalid.</b></p>
+						  			</div>
+								</div>
+						  		<div class="col-lg-5 col-md-5 ">
+						  			<img class="img-responsive mbl pull-right" src="https://css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg">	
+						  		</div>
+						  	</div>								  	
 						</li>
-						<li class="list-group-item">
+						<li class="list-group-item listy">
 							<h2 class="mbl">Align-Self</h2>
-							<div class="childalign-options xyz mbl">
-								<label class="radio-inline">
-									<input type="radio" value="flex-start" class="child-prop-selected" category="align-self" name="align-self" >Flex-Start
-								</label>
-								<label class="radio-inline">
-									<input type="radio" value="flex-end" class="child-prop-selected" category="align-self" name="align-self" >Flex-End
-								</label>													
-								<label class="radio-inline">
-									<input type="radio" value="center" class="child-prop-selected" category="align-self" name="align-self" >center
-								</label>													
-								<label class="radio-inline">
-									<input type="radio" value="baseline" class="child-prop-selected" category="align-self" name="align-self" >Baseline
-								</label>
-								<label class="radio-inline">
-									<input type="radio" value="stretch" class="child-prop-selected" category="align-self" name="align-self" >Stretch
-								</label>							
-								<label class="radio-inline">
-									<input type="radio" value="auto" class="child-prop-selected" category="align-self" name="align-self" checked="checked">auto
-								</label>								
-							</div>
-						  	<div class="child-align child-test-div-container xyz mbl">
-						  		<div class="child-test-div red"><span class="test-div-text">1</span></div>
-						  		<div class="child-test-div blue"><span class="test-div-text">2</span></div>
-						  		<div class="child-test-div green"><span class="test-div-text">3</span></div>
-						  		<div class="child-test-div orange"><span class="test-div-text">4</span></div>
-						  		<div class="child-test-div purple"><span class="test-div-text">5</span></div>
-						  	</div>
+							<div class="row">
+						  		<div class="col-lg-7 col-md-7">
+									<div class="childalign-options xyz mbl">
+										<label class="radio-inline">
+											<input type="radio" value="flex-start" class="child-prop-selected" category="align-self" name="align-self" >Flex-Start
+										</label>
+										<label class="radio-inline">
+											<input type="radio" value="flex-end" class="child-prop-selected" category="align-self" name="align-self" >Flex-End
+										</label>													
+										<label class="radio-inline">
+											<input type="radio" value="center" class="child-prop-selected" category="align-self" name="align-self" >center
+										</label>													
+										<label class="radio-inline">
+											<input type="radio" value="baseline" class="child-prop-selected" category="align-self" name="align-self" >Baseline
+										</label>
+										<label class="radio-inline">
+											<input type="radio" value="stretch" class="child-prop-selected" category="align-self" name="align-self" >Stretch
+										</label>							
+										<label class="radio-inline">
+											<input type="radio" value="auto" class="child-prop-selected" category="align-self" name="align-self" checked="checked">auto
+										</label>								
+									</div>
+								  	<div class="child-align child-test-div-container xyz mbl">
+								  		<div class="child-test-div red"><span class="test-div-text">1</span></div>
+								  		<div class="child-test-div blue"><span class="test-div-text">2</span></div>
+								  		<div class="child-test-div green"><span class="test-div-text">3</span></div>
+								  		<div class="child-test-div orange"><span class="test-div-text">4</span></div>
+								  		<div class="child-test-div purple"><span class="test-div-text">5</span></div>
+								  	</div>
+								  	<div class="description mbl">
+										<p>This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.<p>
+										<p><b>Note</b> that <code>float</code>, <code>clear</code> and <code>vertical-align</code> have no effect on a flex item.</p>
+						  			</div>
+								</div>
+						  		<div class="col-lg-5 col-md-5 ">
+						  			<img class="img-responsive mbl pull-right" src="https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg">	
+						  		</div>
+						  	</div>								
 						</li>
 				  	</ul>
 				  </div>
